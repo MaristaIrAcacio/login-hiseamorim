@@ -5,6 +5,6 @@ function acessar() {
     if(!loginEmail || !loginSenha) {
         alert("favor preencha os campos para acessar o site");
     } else {
-       alert("Campos preenchidos com sucesso");
+       windom.location.href = "aula2.html";
     }
 }
