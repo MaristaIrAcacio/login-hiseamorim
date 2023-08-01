@@ -30,3 +30,13 @@ function criarLista(){
         document.getElementById('tabela').innerHTML = tabela;
     }
 }
+//FUNÇÂO PARA EDITAR NOME
+function editar(i){
+    document.getElementById('nomeUser').value = dadosLista[(i - 1)];
+    dadosLista.splice(dadosLista[(i - 1)], 1);
+}
+// FUNÇÂO PARA EXCLUIR NOME
+function excluir(i){
+    dadosLista.splice((i - 1), );
+    document.getElementById('tabela').deleteRow(i);
+}
